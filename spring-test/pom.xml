@@ -5,6 +5,7 @@
 	<artifactId>spring-test</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>spring-test</name>
+	<packaging>jar</packaging>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -33,6 +34,15 @@
 	
 	<build>
 		<plugins>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+				</configuration>
+			</plugin>
+			
+			<!--  Comentar quando for gerar WAR -->
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
