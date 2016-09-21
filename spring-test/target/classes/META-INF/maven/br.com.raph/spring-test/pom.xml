@@ -5,13 +5,15 @@
 	<artifactId>spring-test</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>spring-test</name>
-	<packaging>jar</packaging>
+	<!-- Comentar quanto for gerar um jar -->
+<!-- 	<packaging>war</packaging> -->
+	<!--  -->
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>1.4.0.RELEASE</version>
-		<relativePath /> <!-- lookup parent from repository -->
+		<relativePath />
 	</parent>
 
 	<dependencies>
@@ -24,6 +26,12 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
+		
+		<dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-tomcat</artifactId>
+            <scope>provided</scope>
+        </dependency>
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -43,10 +51,11 @@
 			</plugin>
 			
 			<!--  Comentar quando for gerar WAR -->
-			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-			</plugin>
+<!-- 			<plugin> -->
+<!-- 				<groupId>org.springframework.boot</groupId> -->
+<!-- 				<artifactId>spring-boot-maven-plugin</artifactId> -->
+<!-- 			</plugin> -->
+			<!--  -->
 		</plugins>
 	</build>
 </project>
