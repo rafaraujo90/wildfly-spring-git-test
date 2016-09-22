@@ -6,7 +6,7 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>spring-test</name>
 	<!-- Comentar quanto for gerar um jar -->
-<!-- 	<packaging>war</packaging> -->
+	<packaging>war</packaging>
 	<!--  -->
 
 	<parent>
